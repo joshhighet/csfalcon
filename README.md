@@ -1,25 +1,12 @@
 <link rel="shortcut icon" type="image/x-icon" href="https://thetanz.github.io/csfalcon/assets/favicon.ico">
 
-<a href="https://www.theta.co.nz/solutions/cyber-security/">
-<img src="https://avatars0.githubusercontent.com/u/2897191?s=70&v=4" 
-title="Theta Cybersecurity" alt="Theta Cybersecurity">
-</a>
-<a href="https://www.crowdstrike.com">
-<img src="https://avatars0.githubusercontent.com/u/2446477?s=70&v=4" 
-title="CrowdStrike" alt="CrowdStrike">
-</a>
-
-<!-- SPL/FQL Threat Hunting Reference Guide -->
-<!-- josh.highet@theta.co.nz -->
-<!-- Theta MDR & OSS Initiatives -->
+![](https://avatars0.githubusercontent.com/u/2897191?s=90&v=4) ![](https://avatars0.githubusercontent.com/u/2446477?s=70&v=4)
 
 <!--
 this resource would not have been made possible 
 without the help of the crowdstrike community on reddit 
 https://www.reddit.com/r/crowdstrike
 -->
-
-***CrowdStrike Falcon***
 
 # SPL/FQL Threat Hunting Reference Guide
 
@@ -605,4 +592,4 @@ CrowdStrike Community Work
 
 ---
 
-- 2021 <a href="https://www.theta.co.nz" target="_blank">Theta</a>.
+[Theta](https://www.theta.co.nz)
