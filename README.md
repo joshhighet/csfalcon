@@ -10,7 +10,7 @@ https://www.reddit.com/r/crowdstrike
 
 [csfalcon.thetadev.services](https://csfalcon.thetadev.services)
 
-This repository hosts a number of searches in Falcon Query Language (FQL), intended for use when hunting within Crowdstrike Falcon's Threat Graph.
+A number of searches in Falcon Query Language (FQL), intended for use when hunting within Crowdstrike Falcon's Threat Graph - served by [docsify](https://docsify.js.org)
 
 These searches may not represent all data available within your tenant and searches should be reviewed before they're operationalised.
 
