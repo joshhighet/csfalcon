@@ -1,5 +1,3 @@
-<link rel="shortcut icon" type="image/x-icon" href="https://thetanz.github.io/csfalcon/assets/favicon.ico">
-
 ![](https://avatars0.githubusercontent.com/u/2897191?s=90&v=4) ![](https://avatars0.githubusercontent.com/u/2446477?s=70&v=4)
 
 <!--
