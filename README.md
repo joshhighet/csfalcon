@@ -28,8 +28,6 @@ CrowdStrike Community Work
 
 <!-- [template]
 
-<a name="TagName"></a>
-
 ## SearchTitle
 
 > SearchNotes
@@ -40,6 +38,5 @@ CrowdStrike Community Work
 <img border="0" alt="thetacyber-csfalcon-fqlsearch" src="assets/search.png" height="40"></a>
 
 -->
----
 
 [Theta](https://www.theta.co.nz)
