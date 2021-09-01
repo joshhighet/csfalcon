@@ -49,6 +49,3 @@ Visual learner? [Follow this recording](https://thetacyber.blob.core.windows.net
 17. Once SSO with CrowdStrike has been configured, a further request to support is required to take the tenant out of `Onboarding Mode`. This will require all authentication to be granted through Azure AD and local accounts will cease t◊o function.
 
 For issues and troubleshooting, See [CrowdStrike's SSO Guide](https://falcon.crowdstrike.com/support/documentation/33/single-sign-on-sso-for-falcon)
-
----
-- 2021 <a href="https://www.theta.co.nz" target="_blank">Theta</a>.
