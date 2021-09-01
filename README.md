@@ -16,7 +16,7 @@ These searches may not represent all data available within your tenant and searc
 
 Searches may create strange values for time fields due to Splunk transforms - this can be resolved with `convert ctime(timestamp/1000)`
 
-> ⚠️ You'll need to login to Crowdstrike before using any of the search buttons across this repository.
+> :warning: You'll need to login to Crowdstrike before using any of the direct-search buttons.
 
 CrowdStrike Community Work
 
@@ -32,10 +32,12 @@ CrowdStrike Community Work
 
 > SearchNotes
 
-    SPL-FQL-Query
+```rb
+SPL-FQL-Query
+```
 
-<a href="HTTPURLGOESHERE">
-<img border="0" alt="thetacyber-csfalcon-fqlsearch" src="assets/search.png" height="40"></a>
+<a href="FALCON-URL-HERE">
+<img border="0" alt="thetacyber-csfalcon-fqlsearch" src="https://csfalcon.thetadev.services/assets/search.png" height="40"></a>
 
 -->
 
