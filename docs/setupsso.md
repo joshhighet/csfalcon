@@ -1,15 +1,4 @@
-<link rel="shortcut icon" type="image/x-icon" href="https://thetanz.github.io/csfalcon/assets/favicon.ico">
-
-<a href="https://www.theta.co.nz/solutions/cyber-security/">
-<img src="https://avatars0.githubusercontent.com/u/2897191?s=70&v=4"
-title="Theta Cybersecurity" alt="Theta Cybersecurity">
-</a>
-
-<!-- CrowdStrike Falcon MDR Documentation -->
-<!-- josh.highet@theta.co.nz -->
-<!-- production -->
-
-## Single Sign On Setup for Azure Active Directory
+## Azure Active Directory
 
 Eliminate operational overhead whilst streamlining access for internal stakeholders with a single set of credentials.
 
