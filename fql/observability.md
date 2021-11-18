@@ -8,6 +8,18 @@
 <a href="https://falcon.crowdstrike.com/investigate/events/en-US/app/eam2/search?q=search%20index%3Dmain%20source%3Dmain%20%7C%20dedup%20%22Agent%20IP%22%20%7C%20table%20%22Agent%20IP%22%20%7C%20rename%20%22Agent%20IP%22%20as%20%22External%20Address%22&sid=1600161468.17856&display.page.search.mode=verbose&dispatch.sample_ratio=1&earliest=-15m&latest=now&display.page.search.tab=statistics&display.general.type=statistics">
 <img border="0" alt="thetacyber-csfalcon-fqlsearch" src="https://csfalcon.thetadev.services/assets/search.png" height="40"></a>
 
+# USB Device Usage
+
+> This search shows a high-level overview of external USB actities - for a more granular view with custom alerting and control policies, see CrowdStrike's [USB Device Control](https://www.crowdstrike.com/endpoint-security-products/falcon-endpoint-device-control/) module.
+
+```rb
+aid=* name=DcUsbDevice*
+| table _time, name, VolumeDriveLetter, VolumeName, DeviceManufacturer, DeviceProduct, DeviceSerialNumber, DeviceInstanceID, FileName
+| sort 0 -_time
+```
+<a href="https://falcon.crowdstrike.com/investigate/events/en-US/app/eam2/search?q=search%20aid%3D*%20name%3DDcUsbDevice*%0A%7C%20table%20_time%2C%20name%2C%20VolumeDriveLetter%2C%20VolumeName%2C%20DeviceManufacturer%2C%20DeviceProduct%2C%20DeviceSerialNumber%2C%20DeviceInstanceID%2C%20FileName%0A%7C%20sort%200%20-_time&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-7d%40h&latest=now&display.page.search.tab=statistics&display.general.type=statistics&sid=1637261308.121371">
+<img border="0" alt="thetacyber-csfalcon-fqlsearch" src="https://csfalcon.thetadev.services/assets/search.png" height="40"></a>
+
 # Windows Build - Fleet Summary
 
 > Generate a report of the various Windows Builds within an environment
