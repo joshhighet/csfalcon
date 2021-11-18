@@ -9,8 +9,6 @@ https://www.reddit.com/r/crowdstrike
 
 # SPL/FQL Threat Hunting Reference Guide
 
-https://user-images.githubusercontent.com/17993143/142487329-0c8635cd-ba6b-4b37-8999-0cf8ddd4dbd2.mp4
-
 A number of searches in Falcon Query Language (FQL), intended for use when hunting within Crowdstrike Falcon's Threat Graph - served by [docsify](https://docsify.js.org)
 
 These searches may not represent all data available within your tenant and searches should be reviewed before they're operationalised.
@@ -24,6 +22,8 @@ CrowdStrike Community Work
 * [Reddit Community](https://www.reddit.com/r/crowdstrike/)
 * [Crowdstrike Splunk Threat Hunting Searches - rmccurdy](https://docs.google.com/spreadsheets/d/1RTcZsRbDsjxwmKpe3FIvSKUjBk5pR2Dlzj71QTnxAK0/edit#gid=0)
 * [CrowdStrike Falcon Queries - pe3zx](https://github.com/pe3zx/crowdstrike-falcon-queries)
+
+https://user-images.githubusercontent.com/17993143/142487329-0c8635cd-ba6b-4b37-8999-0cf8ddd4dbd2.mp4
 
 ---
 
