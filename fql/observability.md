@@ -55,7 +55,7 @@ index=main source=main
 
 # View Devices on a Map
 
-> After running this search head to the `Visualisations` tab and select `Cloropleth`  to view hthe coordinates represented
+> After running this search head to the `Visualisations` tab and select `Cloropleth`  to view the coordinates represented
 
 ```rb
 index=main
