@@ -69,3 +69,19 @@ index=main sourcetype="ScreenshotTakenEtwV2-v02" FileName!="Teams.exe"
 
 <a href="https://falcon.crowdstrike.com/eam/en-US/app/eam2/search?q=search%20index%3Dmain%20sourcetype%3D%22ScreenshotTakenEtwV2-v02%22%20FileName!%3D%22Teams.exe%22%0A%7C%20%20stats%20count%20by%20ComputerName%2CUserName%2CFileName%20%7C%20rename%20count%20as%20Screenshots%20&display.page.search.mode=smart&dispatch.sample_ratio=1&earliest=-7d%40h&latest=now&display.page.search.tab=statistics&display.general.type=statistics&display.visualizations.type=mapping&display.visualizations.mapping.type=choropleth&sid=1600166603.17992">
 <img border="0" alt="thetacyber-csfalcon-fqlsearch" src="https://csfalcon.thetadev.services/assets/search.png" height="40"></a>
+
+# Apache Log4j
+
+> CVE-2021-44228
+
+```rb
+event_simpleName IN (ProcessRollup2, SyntheticProcessRollup2) 
+| fields ProcessStartTime_decimal ComputerName  FileName CommandLine
+| search CommandLine="*jndi:ldap:*" OR CommandLine="*jndi:rmi:*" OR CommandLine="*jndi:ldaps:*" OR CommandLine="*jndi:dns:*" 
+| rex field=CommandLine ".*(?<stringOfInterest>\$\{jndi\:(ldap|rmi|ldaps|dns)\:.*\}).*"
+| table ProcessStartTime_decimal ComputerName FileName stringOfInterest CommandLine
+| convert ctime(ProcessStartTime_decimal) 
+```
+
+<a href="https://falcon.crowdstrike.com/investigate/events/en-US/app/eam2/search?earliest=-7d%40h&latest=now&q=search%20event_simpleName%20IN%20(ProcessRollup2%2C%20SyntheticProcessRollup2)%20%0A%7C%20fields%20ProcessStartTime_decimal%20ComputerName%20%20FileName%20CommandLine%0A%7C%20search%20CommandLine%3D%22*jndi%3Aldap%3A*%22%20OR%20CommandLine%3D%22*jndi%3Armi%3A*%22%20OR%20CommandLine%3D%22*jndi%3Aldaps%3A*%22%20OR%20CommandLine%3D%22*jndi%3Adns%3A*%22%20%0A%7C%20rex%20field%3DCommandLine%20%22.*(%3F%3CstringOfInterest%3E%5C%24%5C%7Bjndi%5C%3A(ldap%7Crmi%7Cldaps%7Cdns)%5C%3A.*%5C%7D).*%22%0A%7C%20table%20ProcessStartTime_decimal%20ComputerName%20FileName%20stringOfInterest%20CommandLine%0A%7C%20convert%20ctime(ProcessStartTime_decimal)%20&sid=1639171391.157037&display.page.search.mode=verbose&dispatch.sample_ratio=1">
+<img border="0" alt="thetacyber-csfalcon-fqlsearch" src="https://csfalcon.thetadev.services/assets/search.png" height="40"></a>
